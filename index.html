@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visita Tenjo - Turismo</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero__overlay"></div>
+      <div class="hero__logo">
+        <a href="#">
+          <img src="img/logo.png" alt="Visita Tenjo" class="hero__logo-image" />
+        </a>
+        <div class="hero__logo-line"></div>
+      </div>
+
+      <div class="hero__content">
+        <div class="hero__left">
+          <h1 class="hero__title">
+            <span class="hero__title--red">VISITA</span>
+            <span class="hero__title--white">TENJO</span>
+          </h1>
+          <p class="hero__description">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+            volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+          </p>
+        </div>
+
+        <div class="hero__right">
+          <div class="hero__tags">
+            <span class="hero__tag">Turismo Cultural</span>
+            <span class="hero__tag">Turismo de Naturaleza y Aventura</span>
+            <span class="hero__tag">Turismo de Bienestar</span>
+            <button class="hero__tag hero__tag--button">
+              Turismo de Negocios y Eventos
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Los 10 Imperdibles Slider dentro del Hero -->
+      <div class="hero__imperdibles">
+        <h2 class="hero__imperdibles-title">
+          <span class="hero__imperdibles-title--red">LOS 10 IMPERDIBLES</span>
+          <br />
+          <span class="hero__imperdibles-title--white">DE TENJO</span>
+        </h2>
+
+        <div class="swiper hero__imperdibles-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide hero__imperdibles-item">
+              <img
+                src="img/mesa_flores.png"
+                alt="Parque"
+                class="hero__imperdibles-image"
+              />
+            </div>
+            <div class="swiper-slide hero__imperdibles-item">
+              <img
+                src="img/parque.png"
+                alt="Parque"
+                class="hero__imperdibles-image"
+              />
+            </div>
+            <div class="swiper-slide hero__imperdibles-item">
+              <img
+                src="img/iglesia.png"
+                alt="Iglesia"
+                class="hero__imperdibles-image"
+              />
+            </div>
+            <div class="swiper-slide hero__imperdibles-item">
+              <img
+                src="img/pueblo_antiguo.png"
+                alt="Pueblo Antiguo"
+                class="hero__imperdibles-image"
+              />
+            </div>
+            <div class="swiper-slide hero__imperdibles-item">
+              <img
+                src="img/sendero.png"
+                alt="Paisaje"
+                class="hero__imperdibles-image"
+              />
+            </div>
+            <div class="swiper-slide hero__imperdibles-item">
+              <img
+                src="img/vista_panoramica.png"
+                alt="Paisaje"
+                class="hero__imperdibles-image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Qué Hacer Section -->
+    <section class="que-hacer">
+      <h2 class="que-hacer__title">
+        <span class="que-hacer__title--red">¿QUÉ HACER</span>
+        <span class="que-hacer__title--gray"> EN TENJO?</span>
+      </h2>
+
+      <div class="que-hacer__grid">
+        <div class="que-hacer__card">
+          <img src="img/turismo.png" alt="Turismo" class="que-hacer__image" />
+          <div class="que-hacer__overlay">
+            <h3 class="que-hacer__card-title">
+              TURISMO
+              <span class="que-hacer__card-line"></span>
+            </h3>
+          </div>
+        </div>
+
+        <div class="que-hacer__card">
+          <img
+            src="img/naturaleza.png"
+            alt="Naturaleza"
+            class="que-hacer__image"
+          />
+          <div class="que-hacer__overlay">
+            <h3 class="que-hacer__card-title">
+              TURISMO
+              <span class="que-hacer__card-line"></span>
+              DE NATURALEZA<br />Y AVENTURA
+            </h3>
+          </div>
+        </div>
+
+        <div class="que-hacer__card">
+          <img
+            src="img/bienestar.png"
+            alt="Bienestar"
+            class="que-hacer__image"
+          />
+          <div class="que-hacer__overlay">
+            <h3 class="que-hacer__card-title">
+              TURISMO
+              <span class="que-hacer__card-line"></span>
+              DE BIENESTAR
+            </h3>
+          </div>
+        </div>
+
+        <div class="que-hacer__card">
+          <img src="img/negocios.png" alt="Negocios" class="que-hacer__image" />
+          <div class="que-hacer__overlay">
+            <h3 class="que-hacer__card-title">
+              TURISMO
+              <span class="que-hacer__card-line"></span>
+              DE NEGOCIOS Y<br />EVENTOS
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+      <div class="services__grid">
+        <div class="services__card">
+          <div class="services__icon">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2M7 2v20M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"
+              />
+            </svg>
+          </div>
+          <h3 class="services__title">
+            <span class="services__title--orange">¿DÓNDE COMER</span>
+            <span class="services__title--white">EN TENJO?</span>
+          </h3>
+        </div>
+
+        <div class="services__card">
+          <div class="services__icon">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M2 4v16M2 8h18a2 2 0 0 1 2 2v10M2 17h20M6 8v9" />
+            </svg>
+          </div>
+          <h3 class="services__title">
+            <span class="services__title--orange">¿DÓNDE DORMIR</span>
+            <span class="services__title--white">EN TENJO?</span>
+          </h3>
+        </div>
+
+        <div class="services__card">
+          <div class="services__icon">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+              <line x1="16" y1="2" x2="16" y2="6" />
+              <line x1="8" y1="2" x2="8" y2="6" />
+              <line x1="3" y1="10" x2="21" y2="10" />
+              <path
+                d="M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01M16 18h.01"
+              />
+            </svg>
+          </div>
+          <h3 class="services__title">
+            <span class="services__title--orange">AGENDA</span>
+            <span class="services__title--white">DE TENJO</span>
+          </h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <section class="footer">
+      <div class="footer__buttons">
+        <button class="footer__button">
+          <svg
+            class="footer__button-icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+            <circle cx="8.5" cy="8.5" r="1.5" />
+            <polyline points="21 15 16 10 5 21" />
+          </svg>
+          Banco de Imágenes
+        </button>
+
+        <button class="footer__button">
+          <svg
+            class="footer__button-icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <circle cx="12" cy="12" r="10" />
+            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+            <line x1="12" y1="17" x2="12.01" y2="17" />
+          </svg>
+          Preguntas frecuentes
+        </button>
+
+        <button class="footer__button">
+          <svg
+            class="footer__button-icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <line x1="12" y1="20" x2="12" y2="10" />
+            <line x1="18" y1="20" x2="18" y2="4" />
+            <line x1="6" y1="20" x2="6" y2="16" />
+          </svg>
+          SITUR
+        </button>
+
+        <button class="footer__button">
+          <svg
+            class="footer__button-icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+            />
+            <polyline points="14 2 14 8 20 8" />
+            <line x1="16" y1="13" x2="8" y2="13" />
+            <line x1="16" y1="17" x2="8" y2="17" />
+            <polyline points="10 9 9 9 8 9" />
+          </svg>
+          Normativa
+        </button>
+      </div>
+
+      <div class="footer__content">
+        <div class="footer__text">
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer <br />
+            adipiscing elit, sed diam nonummy nibh euismod <br />
+            tincidunt ut laoreet dolore magna aliquam erat <br />
+            volutpat. Ut wisi enim ad minim veniam, quis <br />
+            nostrud exerci tation
+          </p>
+        </div>
+
+        <div class="footer__nav">
+          <button class="footer__nav-button">Normativa</button>
+          <button class="footer__nav-button footer__nav-button--active">
+            Banco de Imágenes
+          </button>
+          <button class="footer__nav-button">Situr</button>
+        </div>
+      </div>
+    </section>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

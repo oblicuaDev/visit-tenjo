@@ -1,0 +1,131 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  background: url("../img/hero bg.png") top center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  &__logo {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 0;
+    padding-left: 2rem;
+    max-width: 1440px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: flex-end;
+    gap: 2.5rem;
+
+    &-image {
+      max-width: 150px;
+      height: auto;
+      display: block;
+    }
+
+    &-line {
+      flex: 1;
+      height: 2px;
+      background: $color-white;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  &__content {
+    position: relative;
+    z-index: 2;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+    padding-top: 200px;
+  }
+
+  &__left {
+    flex: 1;
+    max-width: 450px;
+    padding-left: 2rem;
+  }
+
+  &__title {
+    font-size: 4.5rem;
+    font-weight: 900;
+    line-height: 0.85;
+    margin-bottom: 1.5rem;
+
+    &--red {
+      color: $color-primary;
+      display: block;
+      font-size: 103px;
+    }
+
+    &--white {
+      color: $color-white;
+      display: block;
+      font-size: 140px;
+    }
+  }
+
+  &__description {
+    font-size: 20px;
+    line-height: 1.5;
+    color: $color-white;
+    max-width: 380px;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    padding-top: 0;
+  }
+
+  &__tags {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: flex-end;
+  }
+
+  // Los 10 Imperdibles dentro del Hero
+  &__imperdibles {
+    position: relative;
+    z-index: 2;
+    margin-top: 2rem;
+    padding: 2rem 0;
+    max-width: 1440px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__imperdibles-title {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 2rem;
+    padding-left: 2rem;
+    line-height: 0.9;
+
+    &--red {
+      color: $color-primary;
+    }
+
+    &--white {
+      color: $color-white;
+    }
+  }
+}

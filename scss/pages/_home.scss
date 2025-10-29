@@ -1,0 +1,50 @@
+// Qué Hacer Section
+.que-hacer {
+  padding: 4rem 2rem;
+  background: $color-white;
+
+  &__title {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    max-width: 1440px;
+    padding-left: 2rem;
+
+    &--red {
+      color: $color-primary;
+    }
+
+    &--gray {
+      color: $color-gray;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+}
+
+// Services Section
+.services {
+  position: relative;
+  padding: 4rem 2rem 4rem;
+  background: linear-gradient(180deg, #3f3f3f 0%, #605d5d 100%);
+
+  &__grid {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
