@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Faunáticos Granja Pedagógica</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Hero con imagen de fondo -->
+    <section
+      class="hero hero--faunaticos"
+      style="background-image: url('img/faunaticos_bg.png')"
+    >
+      <div class="hero__overlay"></div>
+
+      <div class="hero__logo">
+        <a href="#">
+          <img src="img/logo.png" alt="Visita Tenjo" class="hero__logo-image" />
+        </a>
+        <div class="hero__logo-line"></div>
+      </div>
+
+      <div class="hero__content">
+        <div class="hero__left">
+          <h1 class="hero__title">
+            <span class="hero__title--white">Faunáticos</span>
+            <span class="hero__title--white">Granja Pedagógica</span>
+          </h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de galería con imagen principal y thumbnails -->
+    <section class="faunaticos-galeria">
+      <div class="faunaticos-galeria__container">
+        <!-- Imagen principal -->
+        <div class="faunaticos-galeria__main">
+          <img
+            src="img/imagen-f.png"
+            alt="Faunáticos Granja Pedagógica - Vista principal"
+            class="faunaticos-galeria__main-image"
+            id="mainImageFaunaticos"
+          />
+          <div class="faunaticos-galeria__description">
+            <p>
+              Faunáticos Granja Pedagógica es uno de los destinos más atractivos
+              de Tenjo para quienes buscan una experiencia educativa, familiar y
+              cercana a la naturaleza. Este espacio combina la diversión con el
+              aprendizaje, permitiendo a niños y adultos conocer de cerca
+              diferentes especies de animales domésticos y exóticos, comprender
+              su cuidado y valorar la importancia de la conservación ambiental.
+              A través de recorridos guiados, actividades interactivas y
+              talleres didácticos, los visitantes pueden aprender sobre la vida
+              en el campo, la agricultura sostenible y la relación entre los
+              seres humanos y la fauna que los rodea.
+            </p>
+            <p>
+              Además de su enfoque educativo, Faunáticos ofrece un entorno ideal
+              para el descanso y la recreación en medio de paisajes naturales
+              típicos de la sabana cundinamarquesa. Sus amplias zonas verdes,
+              áreas de picnic y espacios para compartir en familia crean una
+              experiencia integral que combina el entretenimiento con la
+              conciencia ambiental. Este lugar se ha consolidado como un
+              referente del turismo pedagógico en Tenjo, promoviendo el respeto
+              por la vida animal, el amor por la naturaleza y la conexión con
+              las raíces rurales que caracterizan a la región.
+            </p>
+          </div>
+        </div>
+
+        <!-- Galería de thumbnails (4 imágenes) -->
+        <div class="faunaticos-galeria__thumbnails">
+          <button
+            class="faunaticos-galeria__thumbnail"
+            onclick="changeFaunaticosImage('img/faunaticos_main.png')"
+          >
+            <img src="img/faunatico1.png" alt="Vista 1 de Faunáticos" />
+          </button>
+          <button
+            class="faunaticos-galeria__thumbnail"
+            onclick="changeFaunaticosImage('img/faunaticos_2.png')"
+          >
+            <img src="img/faunatico2.png" alt="Vista 2 de Faunáticos" />
+          </button>
+          <button
+            class="faunaticos-galeria__thumbnail"
+            onclick="changeFaunaticosImage('img/faunaticos_3.png')"
+          >
+            <img src="img/faunatico3.png" alt="Vista 3 de Faunáticos" />
+          </button>
+          <button
+            class="faunaticos-galeria__thumbnail"
+            onclick="changeFaunaticosImage('img/faunaticos_4.png')"
+          >
+            <img src="img/faunatico4.png" alt="Vista 4 de Faunáticos" />
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de mapa y contacto -->
+    <section class="faunaticos-ubicacion">
+      <div class="faunaticos-ubicacion__container">
+        <!-- Mapa -->
+        <div class="faunaticos-ubicacion__mapa">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.8!2d-74.145!3d4.867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNMKwNTInMDEuMiJOIDc0wrAwOCc0Mi4wIlc!5e0!3m2!1ses!2sco!4v1234567890"
+            width="100%"
+            height="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+        <!-- Información de contacto -->
+        <div class="faunaticos-ubicacion__info">
+          <div class="faunaticos-ubicacion__item">
+            <div class="faunaticos-ubicacion__icon">
+              <img src="img/reloj.png" alt="icono de horario" />
+            </div>
+            <div class="faunaticos-ubicacion__details">
+              <h4>Horario</h4>
+              <p><strong>L - V</strong> 8:00 a.m. a 5:00 p.m.</p>
+              <p><strong>S - D</strong> 9:00 a.m. a 12:00 p.m.</p>
+            </div>
+          </div>
+
+          <div class="faunaticos-ubicacion__item">
+            <div class="faunaticos-ubicacion__icon">
+              <img src="img/email.png" alt="icono de correo" />
+            </div>
+            <div class="faunaticos-ubicacion__details">
+              <h4>Correo</h4>
+              <p>info@correo.com</p>
+            </div>
+          </div>
+
+          <div class="faunaticos-ubicacion__item">
+            <div class="faunaticos-ubicacion__icon">
+              <img src="img/telefono.png" alt="icono de teléfono" />
+            </div>
+            <div class="faunaticos-ubicacion__details">
+              <h4>Teléfono</h4>
+              <p>601 2505968</p>
+            </div>
+          </div>
+
+          <div class="faunaticos-ubicacion__item">
+            <div class="faunaticos-ubicacion__icon">
+              <img src="img/whatsapp.png" alt="icono de whatsapp" />
+            </div>
+            <div class="faunaticos-ubicacion__details">
+              <h4>WhatsApp</h4>
+              <p>310 3319903</p>
+            </div>
+          </div>
+
+          <div class="faunaticos-ubicacion__item">
+            <div class="faunaticos-ubicacion__icon">
+              <img src="img/ubicacion.png" alt="icono de ubicación" />
+            </div>
+            <div class="faunaticos-ubicacion__details">
+              <h4>Dirección</h4>
+              <p>Av. Carrera 23 # 2 - 10</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/main.js"></script>
+    <script>
+      // Función para cambiar la imagen principal de Faunáticos
+      function changeFaunaticosImage(newSrc) {
+        const mainImage = document.getElementById("mainImageFaunaticos");
+        mainImage.style.opacity = "0";
+        setTimeout(() => {
+          mainImage.src = newSrc;
+          mainImage.style.opacity = "1";
+        }, 200);
+      }
+    </script>
+  </body>
+</html>

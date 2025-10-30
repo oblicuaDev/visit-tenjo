@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parque de Tenjo</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Hero con imagen de fondo -->
+    <section
+      class="hero hero--parque-tenjo"
+      style="background-image: url('img/parque_tenjo_bg.png')"
+    >
+      <div class="hero__overlay"></div>
+
+      <div class="hero__logo">
+        <a href="#">
+          <img src="img/logo.png" alt="Visita Tenjo" class="hero__logo-image" />
+        </a>
+        <div class="hero__logo-line"></div>
+      </div>
+
+      <div class="hero__content">
+        <div class="hero__left">
+          <h1 class="hero__title">
+            <span class="hero__title--red">PARQUE</span>
+            <span class="hero__title--white">DE TENJO</span>
+          </h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de galería con imagen principal y thumbnails -->
+    <section class="parque-galeria">
+      <div class="parque-galeria__container">
+        <!-- Imagen principal -->
+        <div class="parque-galeria__main">
+          <img
+            src="img/parque_p.png"
+            alt="Parque Principal de Tenjo - Vista principal"
+            class="parque-galeria__main-image"
+            id="mainImage"
+          />
+          <div class="parque-galeria__description">
+            <p>
+              El Parque Principal de Tenjo es el epicentro de la vida social y
+              cultural del municipio. Rodeado por casas coloniales, coloridos
+              jardines y la imponente Iglesia de San Lorenzo Mártir, este
+              espacio ofrece un ambiente acogedor donde locales y visitantes se
+              reúnen para compartir, descansar y disfrutar del paisaje.
+            </p>
+            <p>
+              Rodeado por edificaciones coloniales, entre ellas la imponente
+              Iglesia de San Lorenzo Mártir, el parque invita a recorrer sus
+              senderos arbolados, descansar en sus bancas y disfrutar del aire
+              puro de la sabana. Es común encontrar allí eventos culturales,
+              ferias artesanales y presentaciones musicales que llenan de
+              alegría y color este punto de encuentro, convirtiéndolo en un
+              lugar imprescindible para quienes desean conocer la esencia del
+              pueblo.
+            </p>
+            <p>
+              Más allá de su belleza y tranquilidad, el parque refleja el
+              espíritu comunitario de Tenjo. Familias, jóvenes y visitantes se
+              reúnen a diario para compartir, conversar o simplemente contemplar
+              el paisaje andino que lo rodea. Los cafés y comercios que bordean
+              la plaza ofrecen una experiencia acogedora, en la que se puede
+              disfrutar desde un buen café campesino hasta dulces típicos
+              elaborados por los habitantes locales. Este entorno, lleno de
+              historia y vida, representa el corazón de Tenjo: un lugar donde la
+              tradición, la hospitalidad y la naturaleza se funden en perfecta
+              armonía.
+            </p>
+          </div>
+        </div>
+
+        <!-- Galería de thumbnails -->
+        <div class="parque-galeria__thumbnails">
+          <button
+            class="parque-galeria__thumbnail"
+            onclick="changeImage('img/parque_main.png')"
+          >
+            <img src="img/parque_mini.png" alt="Vista 1 del parque" />
+          </button>
+          <button
+            class="parque-galeria__thumbnail"
+            onclick="changeImage('img/parque_2.png')"
+          >
+            <img src="img/parque_mini.png" alt="Vista 2 del parque" />
+          </button>
+          <button
+            class="parque-galeria__thumbnail"
+            onclick="changeImage('img/parque_3.png')"
+          >
+            <img src="img/parque_mini.png" alt="Vista 3 del parque" />
+          </button>
+          <button
+            class="parque-galeria__thumbnail"
+            onclick="changeImage('img/parque_4.png')"
+          >
+            <img src="img/parque_mini.png" alt="Vista 4 del parque" />
+          </button>
+          <button
+            class="parque-galeria__thumbnail"
+            onclick="changeImage('img/parque_5.png')"
+          >
+            <img src="img/parque_mini.png" alt="Vista 5 del parque" />
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de mapa y contacto -->
+    <section class="parque-ubicacion">
+      <div class="parque-ubicacion__container">
+        <!-- Mapa -->
+        <div class="parque-ubicacion__mapa">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.8!2d-74.145!3d4.867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNMKwNTInMDEuMiJOIDc0wrAwOCc0Mi4wIlc!5e0!3m2!1ses!2sco!4v1234567890"
+            width="100%"
+            height="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+        <!-- Información de contacto -->
+        <div class="parque-ubicacion__info">
+          <div class="parque-ubicacion__item">
+            <div class="parque-ubicacion__icon">
+              <img src="img/reloj.png" alt="icono de horario" />
+            </div>
+            <div class="parque-ubicacion__details">
+              <h4>Horario</h4>
+              <p><strong>L - V</strong> 8:00 a.m. a 5:00 p.m.</p>
+              <p><strong>S - D</strong> 9:00 a.m. a 12:00 p.m.</p>
+            </div>
+          </div>
+
+          <div class="parque-ubicacion__item">
+            <div class="parque-ubicacion__icon">
+              <img src="img/email.png" alt="icono de correo" />
+            </div>
+            <div class="parque-ubicacion__details">
+              <h4>Correo</h4>
+              <p>info@correo.com</p>
+            </div>
+          </div>
+
+          <div class="parque-ubicacion__item">
+            <div class="parque-ubicacion__icon">
+              <img src="img/telefono.png" alt="icono de teléfono" />
+            </div>
+            <div class="parque-ubicacion__details">
+              <h4>Teléfono</h4>
+              <p>601 2505968</p>
+            </div>
+          </div>
+
+          <div class="parque-ubicacion__item">
+            <div class="parque-ubicacion__icon">
+              <img src="img/whatsapp.png" alt="icono de whatsapp" />
+            </div>
+            <div class="parque-ubicacion__details">
+              <h4>WhatsApp</h4>
+              <p>310 3319903</p>
+            </div>
+          </div>
+
+          <div class="parque-ubicacion__item">
+            <div class="parque-ubicacion__icon">
+              <img src="img/ubicacion.png" alt="icono de ubicación" />
+            </div>
+            <div class="parque-ubicacion__details">
+              <h4>Dirección</h4>
+              <p>Av. Carrera 23 # 2 - 10</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/main.js"></script>
+    <script>
+      // Función para cambiar la imagen principal
+      function changeImage(newSrc) {
+        const mainImage = document.getElementById("mainImage");
+        mainImage.style.opacity = "0";
+        setTimeout(() => {
+          mainImage.src = newSrc;
+          mainImage.style.opacity = "1";
+        }, 200);
+      }
+    </script>
+  </body>
+</html>
