@@ -87,12 +87,14 @@
 
 /* Grid de tarjetas de turismo */
 .turismo-grid {
+  padding: 60px 0;
   &__container {
     max-width: 1200px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr); /* 6 columnas para control fino */
-    gap: 20px;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
 
     .que-hacer__card {
       width: 100%;

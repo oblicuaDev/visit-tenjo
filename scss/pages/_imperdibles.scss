@@ -108,6 +108,8 @@
 
     /* panel en la segunda columna (en flujo, no absolute) */
     .imperdible-row__panel {
+      background-size: cover;
+      background-repeat: no-repeat;
       grid-column: 2 / 3;
       position: relative; /* mantiene en flujo - evita overflow */
       height: 100%;

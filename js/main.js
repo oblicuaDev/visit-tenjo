@@ -30,38 +30,3 @@ if (swiperElement) {
     },
   });
 }
-
-// Aplicar background-image a paneles desde data-bg
-console.log("🔍 Iniciando configuración de backgrounds...");
-
-document.addEventListener("DOMContentLoaded", () => {
-  console.log("✅ DOM cargado, buscando filas con data-bg...");
-
-  const rows = document.querySelectorAll(".imperdible-row[data-bg]");
-  console.log(`📊 Encontradas ${rows.length} filas con data-bg`);
-
-  rows.forEach((row, index) => {
-    const bgImage = row.getAttribute("data-bg");
-    const panel = row.querySelector(".imperdible-row__panel");
-
-    console.log(`\n🔧 Fila ${index + 1}:`, {
-      bgImage,
-      panelEncontrado: !!panel,
-      elemento: row,
-    });
-
-    if (panel && bgImage) {
-      // Establecer custom property CSS con ruta relativa al CSS (no al HTML)
-      // CSS está en css/styles.css, por eso usamos ../img/ para subir al directorio raíz
-      panel.style.setProperty("--panel-bg", `url('../img/${bgImage}')`);
-
-      // Verificar que se aplicó
-      const valorAplicado = panel.style.getPropertyValue("--panel-bg");
-      console.log(`✅ Fila ${index + 1} → --panel-bg:`, valorAplicado);
-    } else {
-      console.warn(`❌ Fila ${index + 1}: panel o bgImage no encontrado`);
-    }
-  });
-
-  console.log("\n🏁 Configuración de backgrounds completada");
-});

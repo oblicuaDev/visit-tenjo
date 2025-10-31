@@ -2,7 +2,6 @@
   position: relative;
   padding: 4rem 2rem;
   background: url("../img/footer bg.png") center/cover no-repeat;
-  height: 100vh;
 
   &::before {
     content: "";
@@ -25,7 +24,7 @@
     z-index: 2;
     display: flex;
     justify-content: center;
-    gap: 64px;
+    gap: 54px;
     flex-wrap: wrap;
     margin-bottom: 4rem;
   }
@@ -49,8 +48,11 @@
     }
 
     &-icon {
-      width: 20px;
-      height: 20px;
+      width: 24px;
+      height: 24px;
+      object-fit: contain;
+      object-position: center;
+      flex-shrink: 0;
     }
   }
 
@@ -73,14 +75,18 @@
       font-size: 0.95rem;
       line-height: 1.6;
       color: rgba(255, 255, 255, 0.9);
-      padding-top: 400px;
+      padding-top: 200px;
     }
   }
 
   &__nav {
+    position: relative;
     display: flex;
     flex-direction: column;
-    gap: 0.8rem;
+    gap: 5px;
     align-items: flex-end;
+    max-width: 1200px;
+    padding-top: 80px;
+    z-index: 1;
   }
 }

@@ -5,7 +5,11 @@
 }
 
 body {
-  font-family: "Arial", sans-serif;
+  font-family: "Mosk", sans-serif;
   line-height: 1.6;
   color: $color-white;
+}
+button,
+a {
+  font-family: inherit;
 }

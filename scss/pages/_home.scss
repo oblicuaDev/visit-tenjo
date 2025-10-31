@@ -37,6 +37,28 @@
   position: relative;
   padding: 4rem 2rem 4rem;
   background: linear-gradient(180deg, #3f3f3f 0%, #605d5d 100%);
+  position: relative;
+  overflow: hidden;
+
+  // Efecto glossy radial desde el centro superior de la sección
+  &::before {
+    content: "";
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 60%;
+    background: radial-gradient(
+      ellipse at center top,
+      rgb(255 255 255 / 55%) 0%,
+      rgb(255 255 255 / 33%) 30%,
+      rgb(255 255 255 / 19%) 50%,
+      rgb(255 255 255 / 0%) 70%
+    );
+    pointer-events: none;
+    z-index: 3;
+  }
 
   &__grid {
     position: relative;

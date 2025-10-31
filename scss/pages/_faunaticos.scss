@@ -44,7 +44,7 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 135px;
-    gap: 20px;
+    gap: 10px;
   }
 
   &__main {
@@ -93,7 +93,6 @@
     transition: all 0.3s ease;
 
     &:hover {
-      border-color: $color-primary;
       transform: scale(1.05);
     }
 
@@ -228,10 +227,10 @@
 
   &__info {
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    justify-content: flex-end;
     gap: 24px;
-    padding: 20px 0;
+    padding: 30px 0;
   }
 
   &__item {

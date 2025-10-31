@@ -1,0 +1,13 @@
+// @use "../abstracts/" as *;
+
+@include font-face("Amithen", amithen, "normal", "normal");
+
+@include font-face("Mosk", "Mosk Light 300", "300", "normal");
+
+@include font-face("Mosk", "Mosk Medium 500", "500", "normal");
+
+@include font-face("Mosk", "Mosk Bold 700", "700", "normal");
+
+@include font-face("Mosk", "Mosk Semi-Bold 600", "600", "normal");
+
+@include font-face("Mosk", "Mosk Ultra-Bold 900", "900", "normal");
