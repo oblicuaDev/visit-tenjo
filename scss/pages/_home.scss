@@ -1,3 +1,10 @@
+// Hero específico del Home
+.hero--home {
+  .hero__overlay {
+    height: 80%; // ← Cambia esto al valor que necesites (50%, 60%, 400px, 30vh, etc.)
+  }
+}
+
 // Qué Hacer Section
 .que-hacer {
   padding: 4rem 2rem;

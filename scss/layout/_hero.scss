@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: column;
   padding: 2rem;
+  overflow: hidden;
 
   &__overlay {
     position: absolute;
@@ -13,6 +14,12 @@
     width: 100%;
     height: 100%;
     z-index: 1;
+    background: linear-gradient(
+      to right,
+      /* ← Dirección de izquierda a derecha */ rgb(0 0 0 / 62%) 0%,
+      /* Opacidad 60% a la izquierda */ rgb(0 0 0 / 35%) 50%,
+      /* Transparente después del 40% */ rgb(0 0 0 / 0%) 100%
+    );
   }
 
   &__logo {
