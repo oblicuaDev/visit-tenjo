@@ -65,6 +65,11 @@
     );
     pointer-events: none;
     z-index: 3;
+
+    // Ocultar en tablets y móviles
+    @media (max-width: 768px) {
+      display: none; // ← Oculta completamente el efecto en móviles
+    }
   }
 
   &__grid {

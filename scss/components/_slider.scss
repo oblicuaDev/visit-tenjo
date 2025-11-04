@@ -1,21 +1,65 @@
-// Swiper Slider - Los 10 Imperdibles
-.hero__imperdibles-slider {
-  width: 100%;
-  overflow: visible;
+// Splide Slider - Los 10 Imperdibles
+// Botón Play/Pause con iconos SVG
+.splide__toggle {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: #f70017;
+  border: none;
+  border-radius: 50%; // Botón circular
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 
-  .swiper-wrapper {
-    display: flex;
+  &:hover {
+    background: darken(#f70017, 10%);
+    transform: scale(1.1);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
   }
 
-  .swiper-slide {
-    width: auto !important;
+  &:active {
+    transform: scale(0.95);
+  }
+
+  // Ocultar/mostrar según el estado del autoplay
+  &[aria-pressed="true"] {
+    .splide__toggle__play {
+      display: none !important; // ← AÑADIR !important
+    }
+    .splide__toggle__pause {
+      display: flex !important; // ← CAMBIAR a flex y añadir !important
+    }
+  }
+
+  &[aria-pressed="false"] {
+    .splide__toggle__play {
+      display: flex !important; // ← CAMBIAR a flex y añadir !important
+    }
+    .splide__toggle__pause {
+      display: none !important; // ← AÑADIR !important
+    }
   }
 }
 
+.splide__toggle__play,
+.splide__toggle__pause {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 50%;
+}
+
 .hero__imperdibles-item {
-  width: 300px;
-  height: 400px;
-  border-radius: 8px;
+  width: 355px;
+  height: 450px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
