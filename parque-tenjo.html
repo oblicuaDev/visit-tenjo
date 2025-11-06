@@ -7,20 +7,60 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
+    <!-- Header estático -->
+    <header class="header">
+      <div class="header__container">
+        <div class="header__content">
+          <!-- Logo -->
+          <a href="index.html" class="header__logo">
+            <img
+              src="img/logo.png"
+              alt="Visita Tenjo"
+              class="header__logo-image"
+            />
+          </a>
+
+          <!-- Menú de navegación -->
+          <nav class="header__nav">
+            <ul class="header__menu">
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link">Qué hacer en tenjo</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link">Donde dormir</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link">Donde comer</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="agenda.html" class="header__menu-link"
+                  >Agenda de eventos</a
+                >
+              </li>
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link">Preguntas frecuentes</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Botón menú móvil (hamburguesa) -->
+          <button class="header__toggle" aria-label="Abrir menú">
+            <span class="header__toggle-line"></span>
+            <span class="header__toggle-line"></span>
+            <span class="header__toggle-line"></span>
+          </button>
+
+          <!-- Línea horizontal (debajo del logo hasta el final del menú) -->
+          <div class="header__line"></div>
+        </div>
+      </div>
+    </header>
     <!-- Hero con imagen de fondo -->
     <section
       class="hero hero--parque-tenjo"
       style="background-image: url('img/parque_tenjo_bg.png')"
     >
       <div class="hero__overlay"></div>
-
-      <div class="hero__logo">
-        <a href="#">
-          <img src="img/logo.png" alt="Visita Tenjo" class="hero__logo-image" />
-        </a>
-        <div class="hero__logo-line"></div>
-      </div>
-
       <div class="hero__content">
         <div class="hero__left">
           <h1 class="hero__title">
@@ -79,31 +119,31 @@
         <div class="parque-galeria__thumbnails">
           <button
             class="parque-galeria__thumbnail"
-            onclick="changeImage('img/parque_main.png')"
+            onclick="changeImage('img/parque_mini.png')"
           >
             <img src="img/parque_mini.png" alt="Vista 1 del parque" />
           </button>
           <button
             class="parque-galeria__thumbnail"
-            onclick="changeImage('img/parque_2.png')"
+            onclick="changeImage('img/parque_mini.png')"
           >
             <img src="img/parque_mini.png" alt="Vista 2 del parque" />
           </button>
           <button
             class="parque-galeria__thumbnail"
-            onclick="changeImage('img/parque_3.png')"
+            onclick="changeImage('img/parque_mini.png')"
           >
             <img src="img/parque_mini.png" alt="Vista 3 del parque" />
           </button>
           <button
             class="parque-galeria__thumbnail"
-            onclick="changeImage('img/parque_4.png')"
+            onclick="changeImage('img/parque_mini.png')"
           >
             <img src="img/parque_mini.png" alt="Vista 4 del parque" />
           </button>
           <button
             class="parque-galeria__thumbnail"
-            onclick="changeImage('img/parque_5.png')"
+            onclick="changeImage('img/parque_mini.png')"
           >
             <img src="img/parque_mini.png" alt="Vista 5 del parque" />
           </button>
@@ -182,6 +222,87 @@
         </div>
       </div>
     </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer__container">
+        <!-- Header: Logo y Redes Sociales en la misma fila -->
+        <div class="footer__header">
+          <!-- Logo -->
+          <div class="footer__logo">
+            <a href="index.html">
+              <img src="img/logo.png" alt="Visita Tenjo" />
+            </a>
+          </div>
+
+          <!-- Social Media Icons -->
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Facebook">
+              <img
+                src="img/icono_facebook.png"
+                alt="icono de Facebook"
+                target="_blank"
+              />
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Instagram">
+              <img
+                src="img/icono_instagram.png"
+                alt="icono de Instagram"
+                target="_blank"
+              />
+            </a>
+            <a href="#" class="footer__social-link" aria-label="YouTube">
+              <img
+                src="img/icono_youtube.png"
+                alt="icono de YouTube"
+                target="_blank"
+              />
+            </a>
+            <a href="#" class="footer__social-link" aria-label="WhatsApp">
+              <img
+                src="img/icono_whatsapp.png"
+                alt="icono de WhatsApp"
+                target="_blank"
+              />
+            </a>
+          </div>
+        </div>
+        <!-- Línea blanca debajo de redes sociales -->
+        <div class="footer__line"></div>
+
+        <!-- Info Section -->
+        <div class="footer__info">
+          <!-- Address -->
+          <div class="footer__address">
+            <p>
+              Km 1 Vía Tenjo La Punta, costado oriental Chitasuga, Tenjo,
+              Cundinamarca
+            </p>
+          </div>
+
+          <!-- Contact Columns -->
+          <div class="footer__contact">
+            <div class="footer__contact-item">
+              <h3>Subdirección de Cultura</h3>
+              <p>3007274898</p>
+            </div>
+            <div class="footer__contact-item">
+              <h3>Subdirección de Turismo</h3>
+              <p>3007274887100</p>
+            </div>
+            <div class="footer__contact-item">
+              <h3>Línea anticorrupción</h3>
+              <p>(+57) 018000919748</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Large Logo Watermark -->
+        <div class="footer__watermark">
+          <img src="img/logo_gris.png" alt="logo de Tenjo gris" />
+        </div>
+      </div>
+    </footer>
 
     <script src="js/main.js"></script>
     <script>

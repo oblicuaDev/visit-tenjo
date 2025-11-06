@@ -12,23 +12,69 @@
     />
   </head>
   <body>
+    <!-- Header estático -->
+    <header class="header">
+      <div class="header__container">
+        <div class="header__content">
+          <!-- Logo -->
+          <a href="index.html" class="header__logo">
+            <img
+              src="img/logo.png"
+              alt="Visita Tenjo"
+              class="header__logo-image"
+            />
+          </a>
+
+          <!-- Menú de navegación -->
+          <nav class="header__nav">
+            <ul class="header__menu">
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link">Qué hacer en tenjo</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link">Donde dormir</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link">Donde comer</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="agenda.html" class="header__menu-link"
+                  >Agenda de eventos</a
+                >
+              </li>
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link">Preguntas frecuentes</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Botón menú móvil (hamburguesa) -->
+          <button class="header__toggle" aria-label="Abrir menú">
+            <span class="header__toggle-line"></span>
+            <span class="header__toggle-line"></span>
+            <span class="header__toggle-line"></span>
+          </button>
+
+          <!-- Línea horizontal (debajo del logo hasta el final del menú) -->
+          <div class="header__line"></div>
+        </div>
+      </div>
+    </header>
+
     <!-- Hero Section -->
     <section class="hero hero--home">
       <div class="hero__overlay"></div>
-      <div class="hero__logo">
-        <a href="#">
-          <img src="img/logo.png" alt="Visita Tenjo" class="hero__logo-image" />
-        </a>
-        <div class="hero__logo-line"></div>
-      </div>
-
       <div class="hero__content">
         <div class="hero__left">
           <h1 class="hero__title">
-            <span class="hero__title--red">VISITA</span>
-            <span class="hero__title--white">TENJO</span>
+            <img
+              src="img/visita-logo.png"
+              alt="Visita Logo"
+              class="hero__title-image"
+            />
+            <span class="hero__title--red">TENJO</span>
           </h1>
-          <p class="hero__description">
+          <p class="hero__description--home">
             Tenjo, un encantador municipio ubicado a pocos kilómetros de Bogotá,
             te invita a disfrutar de su aire puro, paisajes verdes y el calor de
             su gente. Rodeado por montañas y bañado por la historia muisca, este
@@ -42,9 +88,7 @@
             <span class="hero__tag">Turismo Cultural</span>
             <span class="hero__tag">Turismo de Naturaleza y Aventura</span>
             <span class="hero__tag">Turismo de Bienestar</span>
-            <button class="hero__tag hero__tag--button">
-              Turismo de Negocios y Eventos
-            </button>
+            <span class="hero__tag"> Turismo de Negocios y Eventos </span>
           </div>
         </div>
       </div>
@@ -199,114 +243,233 @@
 
     <!-- Services Section -->
     <section class="services">
-      <div class="services__grid">
-        <div class="services__card">
-          <div class="services__icon">
+      <div class="services__container">
+        <!-- Card 1: Dónde Comer -->
+        <article class="services__card">
+          <div class="services__image-wrapper">
             <img
-              src="img/comer.png"
-              alt="icono de tenedor y cuchillo"
-              class="services__icon-img"
+              src="img/donde_comer.png"
+              alt="¿Dónde comer en Tenjo?"
+              class="services__image"
             />
+            <div class="services__icon-badge">
+              <img
+                src="img/cuchillo_tenedor.png"
+                alt="icono de tenedor"
+                class="services__icon"
+              />
+            </div>
           </div>
-          <h3 class="services__title">
-            <span class="services__title--orange">¿DÓNDE COMER</span>
-            <span class="services__title--white">EN TENJO?</span>
-          </h3>
-        </div>
+          <div class="services__content">
+            <h3 class="services__title">
+              <span class="services__title--orange">¿DÓNDE COMER</span>
+              <span class="services__title--gray">EN TENJO?</span>
+            </h3>
+          </div>
+        </article>
 
-        <div class="services__card">
-          <div class="services__icon">
+        <!-- Card 2: Dónde Dormir -->
+        <article class="services__card">
+          <div class="services__image-wrapper">
             <img
-              src="img/dormir.png"
-              alt="icono de dormir"
-              class="services__icon-img"
+              src="img/habitacion.png"
+              alt="¿Dónde dormir en Tenjo?"
+              class="services__image"
             />
+            <div class="services__icon-badge">
+              <img
+                src="img/cama.png"
+                alt="icono de cama"
+                class="services__icon"
+              />
+            </div>
           </div>
-          <h3 class="services__title">
-            <span class="services__title--orange">¿DÓNDE DORMIR</span>
-            <span class="services__title--white">EN TENJO?</span>
-          </h3>
-        </div>
+          <div class="services__content">
+            <h3 class="services__title">
+              <span class="services__title--orange">¿DÓNDE DORMIR</span>
+              <span class="services__title--gray">EN TENJO?</span>
+            </h3>
+          </div>
+        </article>
 
-        <div class="services__card">
-          <div class="services__icon">
+        <!-- Card 3: Agenda de Eventos -->
+        <article class="services__card">
+          <div class="services__image-wrapper">
             <img
-              src="img/calendario.png"
-              alt="icono de calendario"
-              class="services__icon-img"
+              src="img/juegos_artificiales.png"
+              alt="Agenda de eventos en Tenjo"
+              class="services__image"
+            />
+            <div class="services__icon-badge">
+              <img
+                src="img/agenda.png"
+                alt="icono de calendario"
+                class="services__icon"
+              />
+            </div>
+          </div>
+          <div class="services__content">
+            <h3 class="services__title">
+              <span class="services__title--orange">AGENDA DE EVENTOS</span>
+              <span class="services__title--gray">EN TENJO</span>
+            </h3>
+          </div>
+        </article>
+
+        <!-- Card 4: Recorridos y Actividades -->
+        <article class="services__card">
+          <div class="services__image-wrapper">
+            <img
+              src="img/recorridos.png"
+              alt="Recorridos y actividades prediseñadas"
+              class="services__image"
+            />
+            <div class="services__icon-badge">
+              <img
+                src="img/recorrido.png"
+                alt="icono de mapa"
+                class="services__icon"
+              />
+            </div>
+          </div>
+          <div class="services__content">
+            <h3 class="services__title">
+              <span class="services__title--orange">RECORRIDOS Y</span>
+              <span class="services__title--gray"
+                >ACTIVIDADES PREDISEÑADAS</span
+              >
+            </h3>
+          </div>
+        </article>
+      </div>
+
+      <!-- Sección banco de imagenes -->
+      <div class="banco-imagenes">
+        <a
+          href="#"
+          class="banco-imagenes__header"
+          aria-label="Ir al banco de imágenes"
+        >
+          <span class="banco-imagenes__title" role="heading" aria-level="2">
+            BANCO DE IMÁGENES
+          </span>
+          <div class="banco-imagenes__icon" aria-hidden="true">
+            <img
+              src="img/camara_roja.png"
+              alt=""
+              class="banco-imagenes__icon-image"
             />
           </div>
-          <h3 class="services__title">
-            <span class="services__title--orange">AGENDA</span>
-            <span class="services__title--white">DE TENJO</span>
-          </h3>
-        </div>
+        </a>
+
+        <nav class="banco-imagenes__nav">
+          <ul class="banco-imagenes__menu">
+            <li class="banco-imagenes__item">
+              <a href="#" class="banco-imagenes__link">
+                <img
+                  src="img/preguntas.png"
+                  alt=""
+                  class="banco-imagenes__link-icon"
+                />
+                Preguntas frecuentes
+              </a>
+            </li>
+            <li class="banco-imagenes__item">
+              <a href="#" class="banco-imagenes__link">
+                <img
+                  src="img/grafico.png"
+                  alt=""
+                  class="banco-imagenes__link-icon"
+                />
+                SITUR
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </section>
 
     <!-- Footer Section -->
-    <section class="footer">
-      <div class="footer__buttons">
-        <button class="footer__button">
-          <img
-            src="img/camara.png"
-            alt="icono de cámara"
-            class="footer__button-icon"
-          />
-          Banco de Imágenes
-        </button>
+    <footer class="footer">
+      <div class="footer__container">
+        <!-- Header: Logo y Redes Sociales en la misma fila -->
+        <div class="footer__header">
+          <!-- Logo -->
+          <div class="footer__logo">
+            <a href="index.html">
+              <img src="img/logo.png" alt="Visita Tenjo" />
+            </a>
+          </div>
 
-        <button class="footer__button">
-          <img
-            src="img/preguntas.png"
-            alt="icono de preguntas"
-            class="footer__button-icon"
-          />
-          Preguntas frecuentes
-        </button>
+          <!-- Social Media Icons -->
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Facebook">
+              <img
+                src="img/icono_facebook.png"
+                alt="icono de Facebook"
+                target="_blank"
+              />
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Instagram">
+              <img
+                src="img/icono_instagram.png"
+                alt="icono de Instagram"
+                target="_blank"
+              />
+            </a>
+            <a href="#" class="footer__social-link" aria-label="YouTube">
+              <img
+                src="img/icono_youtube.png"
+                alt="icono de YouTube"
+                target="_blank"
+              />
+            </a>
+            <a href="#" class="footer__social-link" aria-label="WhatsApp">
+              <img
+                src="img/icono_whatsapp.png"
+                alt="icono de WhatsApp"
+                target="_blank"
+              />
+            </a>
+          </div>
+        </div>
+        <!-- Línea blanca debajo de redes sociales -->
+        <div class="footer__line"></div>
 
-        <button class="footer__button">
-          <img
-            src="img/grafico.png"
-            alt="icono de gráfico"
-            class="footer__button-icon"
-          />
-          SITUR
-        </button>
+        <!-- Info Section -->
+        <div class="footer__info">
+          <!-- Address -->
+          <div class="footer__address">
+            <p>
+              Km 1 Vía Tenjo La Punta, costado oriental Chitasuga, Tenjo,
+              Cundinamarca
+            </p>
+          </div>
 
-        <button class="footer__button">
-          <img
-            src="img/icono-normativa.png"
-            alt="icono de persona"
-            class="footer__button-icon"
-          />
-          Normativa
-        </button>
-      </div>
+          <!-- Contact Columns -->
+          <div class="footer__contact">
+            <div class="footer__contact-item">
+              <h3>Subdirección de Cultura</h3>
+              <p>3007274898</p>
+            </div>
+            <div class="footer__contact-item">
+              <h3>Subdirección de Turismo</h3>
+              <p>3007274887100</p>
+            </div>
+            <div class="footer__contact-item">
+              <h3>Línea anticorrupción</h3>
+              <p>(+57) 018000919748</p>
+            </div>
+          </div>
+        </div>
 
-      <div class="footer__nav">
-        <button class="footer__nav-button">Normativa</button>
-        <button class="footer__nav-button footer__nav-button--active">
-          Banco de Imágenes
-        </button>
-        <button class="footer__nav-button">Situr</button>
-      </div>
-
-      <div class="footer__content">
-        <div class="footer__text">
-          <p>
-            El turismo arqueológico en Tenjo ofrece una fascinante mirada al
-            pasado muisca. En sus cerros y alrededores se conservan vestigios
-            prehispánicos, petroglifos y antiguos lugares ceremoniales que
-            revelan la profunda conexión espiritual de este pueblo con la
-            naturaleza. Visitar estos sitios es recorrer la historia viva de una
-            cultura ancestral que aún perdura en la memoria del territorio.
-          </p>
+        <!-- Large Logo Watermark -->
+        <div class="footer__watermark">
+          <img src="img/logo_gris.png" alt="logo de Tenjo gris" />
         </div>
       </div>
-    </section>
-    <!-- Swiper JS -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+    </footer>
+
     <!-- Splide JS -->
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/js/splide.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>

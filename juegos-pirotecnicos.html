@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Turismo Gastronómico</title>
+    <title>Juegos Pirotécnicos</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
@@ -57,135 +57,131 @@
     </header>
     <!-- Hero con imagen de fondo -->
     <section
-      class="hero hero--turismo-gastronomico"
-      style="background-image: url('img/turismo_gastronomico_bg.png')"
+      class="hero hero--juegos-pirotecnicos"
+      style="background-image: url('img/juegos-bg.png')"
     >
       <div class="hero__overlay"></div>
       <div class="hero__content">
         <div class="hero__left">
           <h1 class="hero__title">
-            <span class="hero__title--red">TURISMO</span>
-            <span class="hero__title--white">GASTRONÓMICO</span>
+            <span class="hero__title--red">JUEGOS</span>
+            <span class="hero__title--white">PIROTÉCNICOS</span>
           </h1>
         </div>
       </div>
     </section>
 
-    <!-- Sección de introducción -->
-    <section class="gastronomia-intro">
-      <div class="gastronomia-intro__container">
-        <h2 class="gastronomia-intro__title">
-          Disfruta de toda la gastronomía que tenemos.
-        </h2>
-        <p class="gastronomia-intro__text">
-          El turismo gastronómico en Tenjo deleita con sabores tradicionales de
-          la cocina campesina cundinamarquesa. En sus restaurantes y fondas se
-          pueden disfrutar platos típicos como la mazamorra, el ajiaco, la
-          gallina criolla y postres artesanales, elaborados con ingredientes
-          locales y el toque casero que distingue a la región.
-        </p>
+    <!-- Sección de galería con imagen principal (sin thumbnails) -->
+    <section class="juegos-galeria">
+      <div class="juegos-galeria__container">
+        <!-- Imagen principal -->
+        <div class="juegos-galeria__main">
+          <img
+            src="img/pirotecnia.png"
+            alt="Juegos Pirotécnicos en Tenjo"
+            class="juegos-galeria__main-image"
+          />
+          <div class="juegos-galeria__description">
+            <p>
+              Los juegos pirotécnicos en Tenjo son una tradición muy esperada
+              durante las principales festividades del municipio, especialmente
+              en las celebraciones patronales y de fin de año.
+            </p>
+            <p>
+              Estas coloridas exhibiciones iluminan el cielo nocturno y llenan
+              de alegría a residentes y visitantes, convirtiéndose en un símbolo
+              de unión y celebración comunitaria. Desde el parque principal, las
+              familias se reúnen para admirar el espectáculo de luces y sonidos
+              que marca el cierre de eventos religiosos, culturales o festivos,
+              acompañados por música, danzas y un ambiente de júbilo que refleja
+              el espíritu alegre y participativo de los tenjanos.
+            </p>
+            <p>
+              Más allá del espectáculo visual, los juegos pirotécnicos en Tenjo
+              representan una expresión cultural arraigada en la historia y las
+              tradiciones del pueblo. Cada año, las autoridades locales y la
+              comunidad organizan estas actividades con el propósito de mantener
+              vivas las costumbres populares y fortalecer el sentido de
+              pertenencia. Aunque se promueve su desarrollo con medidas de
+              seguridad y conciencia ambiental, el brillo de los fuegos
+              artificiales sigue siendo un momento mágico que une generaciones,
+              evocando la emoción, la esperanza y la identidad festiva que
+              caracterizan al municipio.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- Grid de restaurantes gastronómicos -->
-    <section class="gastronomia-grid">
-      <div class="gastronomia-grid__container">
-        <!-- Restaurante 1 -->
-        <article class="restaurante-card">
-          <img
-            src="img/faunaticos.png"
-            alt="Faunáticos Granja Pedagógica"
-            class="restaurante-card__image"
-          />
-          <div class="restaurante-card__overlay">
-            <h3 class="restaurante-card__title">
-              FAUNÁTICOS<br />GRANJA PEDAGÓGICA
-            </h3>
-          </div>
-        </article>
+    <!-- Sección de mapa y contacto -->
+    <section class="juegos-ubicacion">
+      <div class="juegos-ubicacion__container">
+        <!-- Mapa -->
+        <div class="juegos-ubicacion__mapa">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.8!2d-74.145!3d4.867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNMKwNTInMDEuMiJOIDc0wrAwOCc0Mi4wIlc!5e0!3m2!1ses!2sco!4v1234567890"
+            width="100%"
+            height="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
 
-        <!-- Restaurante 2 -->
-        <article class="restaurante-card">
-          <img
-            src="img/empanada.png"
-            alt="La Mera Empanada"
-            class="restaurante-card__image"
-          />
-          <div class="restaurante-card__overlay">
-            <h3 class="restaurante-card__title">LA MERA<br />EMPANADA</h3>
+        <!-- Información de contacto -->
+        <div class="juegos-ubicacion__info">
+          <div class="juegos-ubicacion__item">
+            <div class="juegos-ubicacion__icon">
+              <img src="img/reloj.png" alt="icono de horario" />
+            </div>
+            <div class="juegos-ubicacion__details">
+              <h4>Horario</h4>
+              <p><strong>L - V</strong> 8:00 a.m. a 5:00 p.m.</p>
+              <p><strong>S - D</strong> 9:00 a.m. a 12:00 p.m.</p>
+            </div>
           </div>
-        </article>
 
-        <!-- Restaurante 3 -->
-        <article class="restaurante-card">
-          <img
-            src="img/ordenanza.png"
-            alt="La Ordenanza Campestre"
-            class="restaurante-card__image"
-          />
-          <div class="restaurante-card__overlay">
-            <h3 class="restaurante-card__title">LA ORDENANZA<br />CAMPESTRE</h3>
+          <div class="juegos-ubicacion__item">
+            <div class="juegos-ubicacion__icon">
+              <img src="img/email.png" alt="icono de correo" />
+            </div>
+            <div class="juegos-ubicacion__details">
+              <h4>Correo</h4>
+              <p>info@correo.com</p>
+            </div>
           </div>
-        </article>
 
-        <!-- Restaurante 4 -->
-        <article class="restaurante-card">
-          <img
-            src="img/tamborland.png"
-            alt="Tamborland"
-            class="restaurante-card__image"
-          />
-          <div class="restaurante-card__overlay">
-            <h3 class="restaurante-card__title">TAMBORLAND</h3>
+          <div class="juegos-ubicacion__item">
+            <div class="juegos-ubicacion__icon">
+              <img src="img/telefono.png" alt="icono de teléfono" />
+            </div>
+            <div class="juegos-ubicacion__details">
+              <h4>Teléfono</h4>
+              <p>601 2505968</p>
+            </div>
           </div>
-        </article>
 
-        <!-- Repite para la segunda fila con las mismas tarjetas u otras -->
-        <article class="restaurante-card">
-          <img
-            src="img/faunaticos.png"
-            alt="Faunáticos Granja Pedagógica"
-            class="restaurante-card__image"
-          />
-          <div class="restaurante-card__overlay">
-            <h3 class="restaurante-card__title">
-              FAUNÁTICOS<br />GRANJA PEDAGÓGICA
-            </h3>
+          <div class="juegos-ubicacion__item">
+            <div class="juegos-ubicacion__icon">
+              <img src="img/whatsapp.png" alt="icono de whatsapp" />
+            </div>
+            <div class="juegos-ubicacion__details">
+              <h4>WhatsApp</h4>
+              <p>310 3319903</p>
+            </div>
           </div>
-        </article>
 
-        <article class="restaurante-card">
-          <img
-            src="img/empanada.png"
-            alt="La Mera Empanada"
-            class="restaurante-card__image"
-          />
-          <div class="restaurante-card__overlay">
-            <h3 class="restaurante-card__title">LA MERA<br />EMPANADA</h3>
+          <div class="juegos-ubicacion__item">
+            <div class="juegos-ubicacion__icon">
+              <img src="img/ubicacion.png" alt="icono de ubicación" />
+            </div>
+            <div class="juegos-ubicacion__details">
+              <h4>Dirección</h4>
+              <p>Av. Carrera 23 # 2 - 10</p>
+            </div>
           </div>
-        </article>
-
-        <article class="restaurante-card">
-          <img
-            src="img//ordenanza.png"
-            alt="La Ordenanza Campestre"
-            class="restaurante-card__image"
-          />
-          <div class="restaurante-card__overlay">
-            <h3 class="restaurante-card__title">LA ORDENANZA<br />CAMPESTRE</h3>
-          </div>
-        </article>
-
-        <article class="restaurante-card">
-          <img
-            src="img/tamborland.png"
-            alt="Tamborland"
-            class="restaurante-card__image"
-          />
-          <div class="restaurante-card__overlay">
-            <h3 class="restaurante-card__title">TAMBORLAND</h3>
-          </div>
-        </article>
+        </div>
       </div>
     </section>
 

@@ -5,7 +5,7 @@
   min-height: 50vh;
 
   .hero__content {
-    padding-top: 100px;
+    padding-top: 190px;
   }
 
   .hero__title {
@@ -97,7 +97,6 @@
     }
 
     &:focus {
-      outline: 2px solid $color-primary;
       outline-offset: 2px;
     }
 

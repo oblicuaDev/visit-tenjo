@@ -6,6 +6,11 @@
   flex-direction: column;
   padding: 60px 0;
   overflow: hidden;
+  // padding-top: 120px;
+
+  @media (max-width: 768px) {
+    padding-top: 100px; // Menos padding en móviles
+  }
 
   &__overlay {
     position: absolute;
