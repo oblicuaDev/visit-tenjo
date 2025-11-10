@@ -38,7 +38,9 @@
                 >
               </li>
               <li class="header__menu-item">
-                <a href="#" class="header__menu-link">Preguntas frecuentes</a>
+                <a href="faq.html" class="header__menu-link"
+                  >Preguntas frecuentes</a
+                >
               </li>
             </ul>
           </nav>
@@ -71,13 +73,68 @@
       </div>
     </section>
 
+    <!-- Filtros de búsqueda -->
+    <section class="filtros-eventos">
+      <div class="filtros-eventos__container">
+        <!-- Buscar -->
+        <div class="filtros-eventos__group">
+          <label for="buscar" class="filtros-eventos__label">Buscar</label>
+          <input
+            type="text"
+            id="buscar"
+            class="filtros-eventos__input"
+            placeholder="Buscar eventos..."
+          />
+        </div>
+
+        <!-- Categoría del evento -->
+        <div class="filtros-eventos__group">
+          <label for="categoria" class="filtros-eventos__label"
+            >Categoría del evento</label
+          >
+          <select id="categoria" class="filtros-eventos__select">
+            <option value="">Seleccione una opción</option>
+            <option value="concierto">Concierto</option>
+            <option value="festival">Festival</option>
+            <option value="deportes">Deportes</option>
+            <option value="cultura">Cultura</option>
+            <option value="gastronomia">Gastronomía</option>
+          </select>
+        </div>
+
+        <!-- Seleccionar fecha desde -->
+        <div class="filtros-eventos__group">
+          <label for="fecha-desde" class="filtros-eventos__label"
+            >Seleccionar fecha desde</label
+          >
+          <input
+            type="date"
+            id="fecha-desde"
+            class="filtros-eventos__input filtros-eventos__input--date"
+          />
+        </div>
+
+        <!-- Seleccionar fecha hasta -->
+        <div class="filtros-eventos__group">
+          <label for="fecha-hasta" class="filtros-eventos__label"
+            >Seleccionar fecha hasta</label
+          >
+          <input
+            type="date"
+            id="fecha-hasta"
+            class="filtros-eventos__input filtros-eventos__input--date"
+          />
+        </div>
+      </div>
+    </section>
+
     <!-- Sección de eventos -->
     <section class="agenda-eventos">
       <div class="agenda-eventos__container">
         <!-- Fila 1 de eventos -->
         <div class="agenda-eventos__row">
           <!-- Evento 1 -->
-          <article class="evento-card">
+          <article class="evento-card" data-fecha="2025-08-20">
             <div class="evento-card__image">
               <img src="img/los_musicos.png" alt="Concierto" />
               <div class="evento-card__date">
@@ -89,26 +146,19 @@
               <span class="evento-card__category">Concierto</span>
               <h3 class="evento-card__title">Los músicos y sus amigos</h3>
               <div class="evento-card__time">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <polyline points="12 6 12 12 16 14"></polyline>
-                </svg>
+                <img
+                  src="img/reloj.png"
+                  alt="Hora"
+                  class="evento-card__time-icon"
+                />
                 <span>8:00 p.m. a 5:00 a.m.</span>
               </div>
-              <button class="evento-card__btn">Conoce más</button>
+              <a href="#" class="evento-card__btn">Conoce más</a>
             </div>
           </article>
 
           <!-- Evento 2 -->
-          <article class="evento-card">
+          <article class="evento-card" data-fecha="2025-08-21">
             <div class="evento-card__image">
               <img src="img/teatro.png" alt="Teatro" />
               <div class="evento-card__date">
@@ -120,26 +170,19 @@
               <span class="evento-card__category">Concierto</span>
               <h3 class="evento-card__title">Los músicos y sus amigos</h3>
               <div class="evento-card__time">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <polyline points="12 6 12 12 16 14"></polyline>
-                </svg>
+                <img
+                  src="img/reloj.png"
+                  alt="Hora"
+                  class="evento-card__time-icon"
+                />
                 <span>8:00 p.m. a 5:00 a.m.</span>
               </div>
-              <button class="evento-card__btn">Conoce más</button>
+              <a href="#" class="evento-card__btn">Conoce más</a>
             </div>
           </article>
 
           <!-- Evento 3 -->
-          <article class="evento-card">
+          <article class="evento-card" data-fecha="2025-08-20">
             <div class="evento-card__image">
               <img src="img/pirotec.png" alt="Juegos pirotécnicos" />
               <div class="evento-card__date">
@@ -151,26 +194,19 @@
               <span class="evento-card__category">Concierto</span>
               <h3 class="evento-card__title">Los músicos y sus amigos</h3>
               <div class="evento-card__time">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <polyline points="12 6 12 12 16 14"></polyline>
-                </svg>
+                <img
+                  src="img/reloj.png"
+                  alt="Hora"
+                  class="evento-card__time-icon"
+                />
                 <span>8:00 p.m. a 5:00 a.m.</span>
               </div>
-              <button class="evento-card__btn">Conoce más</button>
+              <a href="#" class="evento-card__btn">Conoce más</a>
             </div>
           </article>
 
           <!-- Evento 4 -->
-          <article class="evento-card">
+          <article class="evento-card" data-fecha="2025-08-20">
             <div class="evento-card__image">
               <img src="img/concierto.png" alt="Concierto" />
               <div class="evento-card__date">
@@ -179,24 +215,17 @@
               </div>
             </div>
             <div class="evento-card__content">
-              <span class="evento-card__category">Candelera</span>
+              <span class="evento-card__category">Concierto</span>
               <h3 class="evento-card__title">Los músicos y sus amigos</h3>
               <div class="evento-card__time">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <polyline points="12 6 12 12 16 14"></polyline>
-                </svg>
+                <img
+                  src="img/reloj.png"
+                  alt="Hora"
+                  class="evento-card__time-icon"
+                />
                 <span>8:00 p.m. a 3:00 a.m.</span>
               </div>
-              <button class="evento-card__btn">Conoce más</button>
+              <a href="#" class="evento-card__btn">Conoce más</a>
             </div>
           </article>
         </div>
@@ -204,7 +233,7 @@
         <!-- Fila 2 de eventos -->
         <div class="agenda-eventos__row">
           <!-- Evento 5 -->
-          <article class="evento-card">
+          <article class="evento-card" data-fecha="2025-08-20">
             <div class="evento-card__image">
               <img src="img/los_musicos.png" alt="Concierto" />
               <div class="evento-card__date">
@@ -216,26 +245,19 @@
               <span class="evento-card__category">Concierto</span>
               <h3 class="evento-card__title">Los músicos y sus amigos</h3>
               <div class="evento-card__time">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <polyline points="12 6 12 12 16 14"></polyline>
-                </svg>
+                <img
+                  src="img/reloj.png"
+                  alt="Hora"
+                  class="evento-card__time-icon"
+                />
                 <span>8:00 p.m. a 5:00 a.m.</span>
               </div>
-              <button class="evento-card__btn">Conoce más</button>
+              <a href="#" class="evento-card__btn">Conoce más</a>
             </div>
           </article>
 
           <!-- Evento 6 -->
-          <article class="evento-card">
+          <article class="evento-card" data-fecha="2025-08-20">
             <div class="evento-card__image">
               <img src="img/teatro.png" alt="Teatro" />
               <div class="evento-card__date">
@@ -247,26 +269,19 @@
               <span class="evento-card__category">Concierto</span>
               <h3 class="evento-card__title">Los músicos y sus amigos</h3>
               <div class="evento-card__time">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <polyline points="12 6 12 12 16 14"></polyline>
-                </svg>
+                <img
+                  src="img/reloj.png"
+                  alt="Hora"
+                  class="evento-card__time-icon"
+                />
                 <span>8:00 p.m. a 5:00 a.m.</span>
               </div>
-              <button class="evento-card__btn">Conoce más</button>
+              <a href="#" class="evento-card__btn">Conoce más</a>
             </div>
           </article>
 
           <!-- Evento 7 -->
-          <article class="evento-card">
+          <article class="evento-card" data-fecha="2025-08-20">
             <div class="evento-card__image">
               <img src="img/pirotec.png" alt="Juegos pirotécnicos" />
               <div class="evento-card__date">
@@ -278,26 +293,19 @@
               <span class="evento-card__category">Concierto</span>
               <h3 class="evento-card__title">Los músicos y sus amigos</h3>
               <div class="evento-card__time">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <polyline points="12 6 12 12 16 14"></polyline>
-                </svg>
+                <img
+                  src="img/reloj.png"
+                  alt="Hora"
+                  class="evento-card__time-icon"
+                />
                 <span>8:00 p.m. a 5:00 a.m.</span>
               </div>
-              <button class="evento-card__btn">Conoce más</button>
+              <a href="#" class="evento-card__btn">Conoce más</a>
             </div>
           </article>
 
           <!-- Evento 8 -->
-          <article class="evento-card">
+          <article class="evento-card" data-fecha="2025-08-20">
             <div class="evento-card__image">
               <img src="img/concierto.png" alt="Concierto" />
               <div class="evento-card__date">
@@ -306,24 +314,17 @@
               </div>
             </div>
             <div class="evento-card__content">
-              <span class="evento-card__category">Candelera</span>
+              <span class="evento-card__category">Concierto</span>
               <h3 class="evento-card__title">Los músicos y sus amigos</h3>
               <div class="evento-card__time">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <polyline points="12 6 12 12 16 14"></polyline>
-                </svg>
+                <img
+                  src="img/reloj.png"
+                  alt="Hora"
+                  class="evento-card__time-icon"
+                />
                 <span>8:00 p.m. a 3:00 a.m.</span>
               </div>
-              <button class="evento-card__btn">Conoce más</button>
+              <a href="#" class="evento-card__btn">Conoce más</a>
             </div>
           </article>
         </div>
@@ -412,5 +413,6 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/agenda.js"></script>
   </body>
 </html>

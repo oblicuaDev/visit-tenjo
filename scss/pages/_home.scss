@@ -5,7 +5,7 @@
 
   @media (max-width: 768px) {
     padding-top: 120px;
-    padding-left: 1rem; // ← Añadir padding lateral
+    padding-left: 1rem;
     padding-right: 1rem;
   }
   @media (max-width: 480px) {
@@ -20,7 +20,7 @@
   .hero__content {
     display: flex;
     align-items: flex-start;
-    gap: 4rem; // ← Aumentar espacio entre columnas
+    gap: 4rem;
 
     @media (max-width: 768px) {
       flex-direction: column;
@@ -37,15 +37,15 @@
 
     @media (max-width: 768px) {
       max-width: 100%;
-      text-align: center; // ← Centrar texto en móviles
+      text-align: center;
     }
   }
 
   .hero__right {
-    flex: 0 0 auto; // ← No crece ni se encoge
-    max-width: 400px; // ← Ancho máximo para los tags
-    align-self: flex-end; // ← Alinea al final del contenedor (abajo)
-    margin-bottom: 0; // ← Sin margen inferior
+    flex: 0 0 auto;
+    max-width: 400px;
+    align-self: flex-end;
+    margin-bottom: 0;
 
     @media (max-width: 1024px) {
       align-self: center;
@@ -53,14 +53,14 @@
 
     @media (max-width: 768px) {
       max-width: 100%;
-      align-self: center; // ← Centrar en móviles
+      align-self: center;
     }
   }
 
   .hero__tags {
     display: flex;
     flex-direction: column;
-    align-items: flex-end; // ← Alinea tags a la derecha
+    align-items: flex-end;
 
     @media (max-width: 1024px) {
       align-items: center; // ← Centrar tags en tablets (768x1024)
@@ -88,11 +88,11 @@
     // "Visita" como imagen
     .hero__title-image {
       width: auto;
-      height: 175px; // Ajusta según el tamaño de tu imagen
+      height: 175px;
       display: block;
-      margin-bottom: -20px; // Superpone con "TENJO"
+      margin-bottom: -20px;
       object-fit: contain;
-      filter: brightness(0) invert(1); // Convierte la imagen a blanco (si es necesario)
+      filter: brightness(0) invert(1);
 
       @media (max-width: 1024px) {
         height: 90px;
@@ -139,7 +139,7 @@
   .hero__imperdibles-title {
     // "LOS 10 IMPERDIBLES" (primera línea)
     .hero__imperdibles-title--red {
-      font-size: 60px; // ← Tamaño específico para "LOS 10 IMPERDIBLES"
+      font-size: 60px;
 
       @media (max-width: 1024px) {
         font-size: 50px;
@@ -156,7 +156,7 @@
 
     // "DE TENJO" (segunda línea)
     .hero__imperdibles-title--white {
-      font-size: 54px; // ← Tamaño específico para "DE TENJO"
+      font-size: 54px;
 
       @media (max-width: 1024px) {
         font-size: 46px;
@@ -197,7 +197,6 @@
 // Qué Hacer Section
 .que-hacer {
   padding: 4rem 2rem;
-  background: $color-white;
 
   &__title {
     font-size: 3rem;
@@ -232,9 +231,9 @@
 .services {
   padding: 4rem 2rem;
   background: url("../img/footer bg.png") center center/cover no-repeat;
-  background-size: cover; // ← AÑADIR: Para que cubra toda el área
-  background-position: center; // ← AÑADIR: Centrar la imagen
-  background-repeat: no-repeat; // ← AÑADIR: No repetir la imagen
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   position: relative;
 
   // Overlay opcional para mejorar legibilidad
@@ -272,6 +271,8 @@
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     cursor: pointer;
+    display: block;
+    text-decoration: none;
     padding: 0;
     border: none;
 

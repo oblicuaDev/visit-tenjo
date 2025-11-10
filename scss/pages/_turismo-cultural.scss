@@ -88,6 +88,9 @@
 /* Grid de tarjetas de turismo */
 .turismo-grid {
   padding: 60px 0;
+  @media (max-width: 768px) {
+    padding: 2rem 1rem;
+  }
   &__container {
     max-width: 1200px;
     margin: 0 auto;
@@ -96,25 +99,49 @@
     flex-wrap: wrap;
     justify-content: center;
 
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      max-width: 100%;
+      padding: 0;
+    }
+
     .que-hacer__card {
       width: 100%;
       max-width: 306px;
       justify-self: center;
-
-      /* Primeras 3 tarjetas ocupan 2 columnas cada una (2+2+2=6) */
       &:nth-child(1),
       &:nth-child(2),
       &:nth-child(3) {
         grid-column: span 2;
+
+        @media (max-width: 768px) {
+          height: 450px;
+          width: 306px;
+          max-width: 100%;
+          margin: 0 auto;
+        }
       }
 
       /* Últimas 2 tarjetas: dejar 1 col vacía, 2 tarjetas de 2 col cada una, 1 col vacía (1+2+2+1=6) */
       &:nth-child(4) {
         grid-column: 2 / span 2;
+        @media (max-width: 768px) {
+          height: 450px;
+          width: 306px;
+          max-width: 100%;
+          margin: 0 auto;
+        }
       }
 
       &:nth-child(5) {
         grid-column: 4 / span 2;
+        @media (max-width: 768px) {
+          height: 450px;
+          width: 306px;
+          max-width: 100%;
+          margin: 0 auto;
+        }
       }
     }
   }

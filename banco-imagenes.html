@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banco de Imagenes</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Splide CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/css/splide.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header estático -->
+    <header class="header">
+      <div class="header__container">
+        <div class="header__content">
+          <!-- Logo -->
+          <a href="index.html" class="header__logo">
+            <img
+              src="img/logo.png"
+              alt="Visita Tenjo"
+              class="header__logo-image"
+            />
+          </a>
+
+          <!-- Menú de navegación -->
+          <nav class="header__nav">
+            <ul class="header__menu">
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link">Qué hacer en tenjo</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link">Donde dormir</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link">Donde comer</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="agenda.html" class="header__menu-link"
+                  >Agenda de eventos</a
+                >
+              </li>
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link">Preguntas frecuentes</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Botón menú móvil (hamburguesa) -->
+          <button class="header__toggle" aria-label="Abrir menú">
+            <span class="header__toggle-line"></span>
+            <span class="header__toggle-line"></span>
+            <span class="header__toggle-line"></span>
+          </button>
+
+          <!-- Línea horizontal (debajo del logo hasta el final del menú) -->
+          <div class="header__line"></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero del Banco de Imágenes -->
+    <section
+      class="banco-hero"
+      style="background-image: url('img/banco-imagenes-bg.jpg')"
+    >
+      <div class="banco-hero__overlay"></div>
+      <div class="banco-hero__content">
+        <!-- Buscador -->
+        <div class="banco-hero__search">
+          <div class="banco-hero__search-wrapper">
+            <img
+              src="img/lupa.png"
+              alt="Buscar"
+              class="banco-hero__search-icon"
+            />
+            <input
+              type="search"
+              id="searchInput"
+              name="search"
+              class="banco-hero__search-input"
+              placeholder="Escribe aquí lo que estas buscando"
+              aria-label="Buscar imágenes"
+              autocomplete="off"
+            />
+          </div>
+
+          <!-- Separador vertical -->
+          <div class="banco-hero__divider"></div>
+
+          <!-- Select de categorías -->
+          <div class="banco-hero__select-wrapper">
+            <select
+              class="banco-hero__select"
+              id="categorySelect"
+              name="category"
+              class="banco-hero__select"
+              aria-label="Seleccionar categoría"
+            >
+              <option value="">CATEGORÍAS</option>
+              <option value="naturaleza">Naturaleza</option>
+              <option value="cultura">Cultura</option>
+              <option value="gastronomia">Gastronomía</option>
+              <option value="eventos">Eventos</option>
+              <option value="arquitectura">Arquitectura</option>
+            </select>
+          </div>
+          <!-- Botón oculto para enviar con Enter -->
+          <button type="submit" class="visually-hidden">Buscar</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Galería de Imágenes -->
+    <section class="galeria">
+      <div class="galeria__container">
+        <!-- Imagen 1 -->
+        <div class="galeria__item" data-categoria="naturaleza">
+          <div class="galeria__image-wrapper">
+            <img
+              src="img/oso-polar.png"
+              alt="Oso polar en el hielo"
+              class="galeria__image"
+            />
+            <div class="galeria__overlay">
+              <button
+                class="galeria__btn-download"
+                aria-label="Descargar imagen"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Imagen 2 -->
+        <div class="galeria__item" data-categoria="naturaleza">
+          <div class="galeria__image-wrapper">
+            <img
+              src="img/velero.png"
+              alt="Velero al atardecer"
+              class="galeria__image"
+            />
+            <div class="galeria__overlay">
+              <button
+                class="galeria__btn-download"
+                aria-label="Descargar imagen"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Imagen 3 -->
+        <div class="galeria__item" data-categoria="naturaleza">
+          <div class="galeria__image-wrapper">
+            <img
+              src="img/rio.png"
+              alt="Río en la selva"
+              class="galeria__image"
+            />
+            <div class="galeria__overlay">
+              <button
+                class="galeria__btn-download"
+                aria-label="Descargar imagen"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Imagen 4 -->
+        <div class="galeria__item" data-categoria="naturaleza">
+          <div class="galeria__image-wrapper">
+            <img
+              src="img/volcan.png"
+              alt="Volcán en erupción"
+              class="galeria__image"
+            />
+            <div class="galeria__overlay">
+              <button
+                class="galeria__btn-download"
+                aria-label="Descargar imagen"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Imagen 5 -->
+        <div class="galeria__item" data-categoria="gastronomia">
+          <div class="galeria__image-wrapper">
+            <img
+              src="img/persona.png"
+              alt="Persona brindando"
+              class="galeria__image"
+            />
+            <div class="galeria__overlay">
+              <button
+                class="galeria__btn-download"
+                aria-label="Descargar imagen"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Imagen 6 -->
+        <div class="galeria__item" data-categoria="arquitectura">
+          <div class="galeria__image-wrapper">
+            <img
+              src="img/castillo.png"
+              alt="Castillo en la montaña"
+              class="galeria__image"
+            />
+            <div class="galeria__overlay">
+              <button
+                class="galeria__btn-download"
+                aria-label="Descargar imagen"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Imagen 7 -->
+        <div class="galeria__item" data-categoria="naturaleza">
+          <div class="galeria__image-wrapper">
+            <img
+              src="img/camino.png"
+              alt="Persona caminando en montaña"
+              class="galeria__image"
+            />
+            <div class="galeria__overlay">
+              <button
+                class="galeria__btn-download"
+                aria-label="Descargar imagen"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Imagen 8 -->
+        <div class="galeria__item" data-categoria="naturaleza">
+          <div class="galeria__image-wrapper">
+            <img
+              src="img/bosque.png"
+              alt="Persona en bosque otoñal"
+              class="galeria__image"
+            />
+            <div class="galeria__overlay">
+              <button
+                class="galeria__btn-download"
+                aria-label="Descargar imagen"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Imagen 9 -->
+        <div class="galeria__item" data-categoria="eventos">
+          <div class="galeria__image-wrapper">
+            <img
+              src="img/van.png"
+              alt="Van en el bosque"
+              class="galeria__image"
+            />
+            <div class="galeria__overlay">
+              <button
+                class="galeria__btn-download"
+                aria-label="Descargar imagen"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Imagen 10 -->
+        <div class="galeria__item" data-categoria="eventos">
+          <div class="galeria__image-wrapper">
+            <img
+              src="img/montaña.png"
+              alt="Ciclista en el bosque"
+              class="galeria__image"
+            />
+            <div class="galeria__overlay">
+              <button
+                class="galeria__btn-download"
+                aria-label="Descargar imagen"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Imagen 11 -->
+        <div class="galeria__item" data-categoria="eventos">
+          <div class="galeria__image-wrapper">
+            <img
+              src="img/surfista.png"
+              alt="Surfista en la ola"
+              class="galeria__image"
+            />
+            <div class="galeria__overlay">
+              <button
+                class="galeria__btn-download"
+                aria-label="Descargar imagen"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Imagen 12 -->
+        <div class="galeria__item" data-categoria="eventos">
+          <div class="galeria__image-wrapper">
+            <img
+              src="img/ciclistas.png"
+              alt="Ciclistas en carrera"
+              class="galeria__image"
+            />
+            <div class="galeria__overlay">
+              <button
+                class="galeria__btn-download"
+                aria-label="Descargar imagen"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer__container">
+        <!-- Header: Logo y Redes Sociales en la misma fila -->
+        <div class="footer__header">
+          <!-- Logo -->
+          <div class="footer__logo">
+            <a href="index.html">
+              <img src="img/logo.png" alt="Visita Tenjo" />
+            </a>
+          </div>
+
+          <!-- Social Media Icons -->
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Facebook">
+              <img
+                src="img/icono_facebook.png"
+                alt="icono de Facebook"
+                target="_blank"
+              />
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Instagram">
+              <img
+                src="img/icono_instagram.png"
+                alt="icono de Instagram"
+                target="_blank"
+              />
+            </a>
+            <a href="#" class="footer__social-link" aria-label="YouTube">
+              <img
+                src="img/icono_youtube.png"
+                alt="icono de YouTube"
+                target="_blank"
+              />
+            </a>
+            <a href="#" class="footer__social-link" aria-label="WhatsApp">
+              <img
+                src="img/icono_whatsapp.png"
+                alt="icono de WhatsApp"
+                target="_blank"
+              />
+            </a>
+          </div>
+        </div>
+        <!-- Línea blanca debajo de redes sociales -->
+        <div class="footer__line"></div>
+
+        <!-- Info Section -->
+        <div class="footer__info">
+          <!-- Address -->
+          <div class="footer__address">
+            <p>
+              Km 1 Vía Tenjo La Punta, costado oriental Chitasuga, Tenjo,
+              Cundinamarca
+            </p>
+          </div>
+
+          <!-- Contact Columns -->
+          <div class="footer__contact">
+            <div class="footer__contact-item">
+              <h3>Subdirección de Cultura</h3>
+              <p>3007274898</p>
+            </div>
+            <div class="footer__contact-item">
+              <h3>Subdirección de Turismo</h3>
+              <p>3007274887100</p>
+            </div>
+            <div class="footer__contact-item">
+              <h3>Línea anticorrupción</h3>
+              <p>(+57) 018000919748</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Large Logo Watermark -->
+        <div class="footer__watermark">
+          <img src="img/logo_gris.png" alt="logo de Tenjo gris" />
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

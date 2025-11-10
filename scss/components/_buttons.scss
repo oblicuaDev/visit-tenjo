@@ -1,14 +1,17 @@
 // Hero tags (navigation buttons)
 .hero__tag {
+  display: inline-block;
   background: transparent;
   color: $color-white;
   padding: 0.2rem 1rem;
   font-size: 18px;
+  font-weight: 500;
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;
   text-align: right;
   white-space: nowrap;
+  text-decoration: none;
   border-radius: 25px;
 
   &:hover {
@@ -24,6 +27,13 @@
       background: $color-primary;
       font-weight: bold;
       transform: translateX(-5px);
+    }
+    &:active {
+      transform: translateY(0);
+    }
+    &:focus {
+      outline: 2px solid #f70017;
+      outline-offset: 2px;
     }
   }
 }

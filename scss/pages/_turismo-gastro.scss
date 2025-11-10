@@ -102,10 +102,11 @@
     width: 100%;
     max-width: 320px;
     position: relative;
-    height: 450px; /* Altura específica para estas tarjetas */
+    height: 450px;
     overflow: hidden;
     cursor: pointer;
-    // transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: block;
+    text-decoration: none;
 
     &:hover {
       box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
@@ -171,7 +172,10 @@
     }
 
     .restaurante-card {
-      height: 220px;
+      height: 450px; // ← Altura fija en móviles
+      width: 100%; // ← Ancho completo (elimina restricciones)
+      max-width: 100%; // ← Sin límite máximo
+      margin: 0 auto;
 
       &__overlay {
         padding: 12px;
@@ -183,9 +187,9 @@
     }
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 430px) {
     &__container {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(1, 1fr);
     }
   }
 }
