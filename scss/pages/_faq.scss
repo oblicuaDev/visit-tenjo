@@ -87,6 +87,10 @@
     }
   }
 
+  &__checkbox {
+    display: none;
+  }
+
   &__question {
     width: 100%;
     display: flex;
@@ -138,10 +142,32 @@
     }
   }
 
+  &__checkbox:checked ~ &__question &__icon {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+
+  // Cambiar color de fondo cuando está abierto
+  &__checkbox:checked ~ &__question {
+    background: #f9f9f9;
+    color: #f70017;
+  }
+
   &__answer {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease;
+  }
+
+  &__checkbox:checked ~ &__answer {
+    max-height: 500px; // Ajustar según el contenido más largo
+
+    @media (max-width: 768px) {
+      max-height: 800px; // Más alto en móviles por si el texto es más largo
+    }
   }
 
   &__answer-content {
@@ -168,5 +194,16 @@
     .faq__answer {
       max-height: 500px; // Ajustar según el contenido más largo
     }
+  }
+}
+// Animación para el contenido
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
