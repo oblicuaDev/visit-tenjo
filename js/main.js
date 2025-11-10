@@ -1,17 +1,58 @@
-var splide = new Splide(".splide");
-
-splide.on("autoplay:playing", function (rate) {
-  console.log(rate); // 0-1
-});
-
-splide.mount();
-
 document.addEventListener("DOMContentLoaded", function () {
-  // Inicializar Splide para "Los 10 Imperdibles"
+  // ============================================
+  // MENÚ HAMBURGUESA (debe funcionar en TODAS las páginas)
+  // ============================================
+  const headerToggle = document.querySelector(".header__toggle");
+  const headerNav = document.querySelector(".header__nav");
+
+  if (headerToggle && headerNav) {
+    // Toggle al hacer clic en el botón hamburguesa
+    headerToggle.addEventListener("click", function () {
+      headerToggle.classList.toggle("is-active");
+      headerNav.classList.toggle("is-active");
+      document.body.classList.toggle("menu-open");
+    });
+
+    // Cerrar menú al hacer clic en un enlace
+    const menuLinks = document.querySelectorAll(".header__menu-link");
+    menuLinks.forEach((link) => {
+      link.addEventListener("click", function () {
+        headerToggle.classList.remove("is-active");
+        headerNav.classList.remove("is-active");
+        document.body.classList.remove("menu-open");
+      });
+    });
+
+    // Cerrar menú al hacer clic fuera
+    document.addEventListener("click", function (e) {
+      if (
+        !headerToggle.contains(e.target) &&
+        !headerNav.contains(e.target) &&
+        headerNav.classList.contains("is-active")
+      ) {
+        headerToggle.classList.remove("is-active");
+        headerNav.classList.remove("is-active");
+        document.body.classList.remove("menu-open");
+      }
+    });
+
+    // Cerrar menú al presionar ESC
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && headerNav.classList.contains("is-active")) {
+        headerToggle.classList.remove("is-active");
+        headerNav.classList.remove("is-active");
+        document.body.classList.remove("menu-open");
+      }
+    });
+  }
+
+  // ============================================
+  // SPLIDE SLIDER (solo para index.html)
+  // ============================================
   const splideElement = document.querySelector(".hero__imperdibles-slider");
 
   if (splideElement) {
-    const splide = new Splide(".hero__imperdibles-slider", {
+    const splideImperdibles = new Splide(".hero__imperdibles-slider", {
       type: "loop",
       perPage: 4,
       perMove: 1,
@@ -41,41 +82,22 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     });
 
-    splide.mount();
+    splideImperdibles.mount();
   }
 
-  // Menú hamburguesa para móviles
-  const headerToggle = document.querySelector(".header__toggle");
-  const headerNav = document.querySelector(".header__nav");
+  // ============================================
+  // SPLIDE SLIDER PARA OTRAS SECCIONES (si existen)
+  // ============================================
+  const splideGeneral = document.querySelector(".splide");
 
-  if (headerToggle && headerNav) {
-    headerToggle.addEventListener("click", function () {
-      headerToggle.classList.toggle("is-active");
-      headerNav.classList.toggle("is-active");
-      document.body.classList.toggle("menu-open");
+  if (splideGeneral && !splideElement) {
+    // Solo montar si no es el slider de imperdibles
+    const splide = new Splide(".splide");
+
+    splide.on("autoplay:playing", function (rate) {
+      console.log(rate); // 0-1
     });
 
-    // Cerrar menú al hacer clic en un enlace
-    const menuLinks = document.querySelectorAll(".header__menu-link");
-    menuLinks.forEach((link) => {
-      link.addEventListener("click", function () {
-        headerToggle.classList.remove("is-active");
-        headerNav.classList.remove("is-active");
-        document.body.classList.remove("menu-open");
-      });
-    });
-
-    // Cerrar menú al hacer clic fuera
-    document.addEventListener("click", function (e) {
-      if (
-        !headerToggle.contains(e.target) &&
-        !headerNav.contains(e.target) &&
-        headerNav.classList.contains("is-active")
-      ) {
-        headerToggle.classList.remove("is-active");
-        headerNav.classList.remove("is-active");
-        document.body.classList.remove("menu-open");
-      }
-    });
+    splide.mount();
   }
 });
