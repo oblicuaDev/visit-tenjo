@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interna de Imagen - Banco de Imágenes</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="detalle-imagen-page">
+    <!-- Header estático -->
+    <header class="header">
+      <div class="header__container">
+        <div class="header__content">
+          <!-- Logo -->
+          <a href="index.html" class="header__logo">
+            <img
+              src="img/logo.png"
+              alt="Visita Tenjo"
+              class="header__logo-image"
+            />
+          </a>
+
+          <!-- Menú de navegación -->
+          <nav class="header__nav">
+            <ul class="header__menu">
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link">Qué hacer en tenjo</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link">Donde dormir</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link">Donde comer</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="agenda.html" class="header__menu-link"
+                  >Agenda de eventos</a
+                >
+              </li>
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link">Preguntas frecuentes</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Botón menú móvil (hamburguesa) -->
+          <button class="header__toggle" aria-label="Abrir menú">
+            <span class="header__toggle-line"></span>
+            <span class="header__toggle-line"></span>
+            <span class="header__toggle-line"></span>
+          </button>
+
+          <!-- Línea horizontal (debajo del logo hasta el final del menú) -->
+          <div class="header__line"></div>
+        </div>
+      </div>
+    </header>
+
+    <div class="interna__shadow"></div>
+
+    <div class="interna__container">
+      <!-- Botón Volver -->
+      <a href="banco-imagenes.html" class="interna__btn-volver">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path d="M19 12H5M12 19l-7-7 7-7" />
+        </svg>
+        VOLVER A LA BÚSQUEDA
+      </a>
+
+      <!-- Layout principal (TARJETA) -->
+      <div class="interna__layout">
+        <!-- Imagen a la izquierda -->
+        <div class="interna__image-wrapper">
+          <img
+            id="internaImagen"
+            src="img/oso-polar.png"
+            alt="imagen oso polar"
+            class="interna__image"
+          />
+        </div>
+
+        <!-- Panel lateral derecho -->
+        <div class="interna__panel">
+          <h1 class="interna__title">¡Obtén esta imagen / video GRATIS!</h1>
+          <p class="interna__text">
+            Descárgalo ahora en el tamaño y resolución que requieres, y recibe
+            acceso completo a la biblioteca audiovisual de Bogotá.
+          </p>
+          <p class="interna__note">
+            Foto / video tomado por: , recuerda darle créditos. El autor
+            recomienda no hacer modificaciones externas a la obra.
+          </p>
+          <a href="#" id="btnDescargar" class="interna__btn-descargar" download>
+            DESCARGAR IMAGEN
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer__container">
+        <!-- Header: Logo y Redes Sociales en la misma fila -->
+        <div class="footer__header">
+          <!-- Logo -->
+          <div class="footer__logo">
+            <a href="index.html">
+              <img src="img/logo.png" alt="Visita Tenjo" />
+            </a>
+          </div>
+
+          <!-- Social Media Icons -->
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Facebook">
+              <img
+                src="img/icono_facebook.png"
+                alt="icono de Facebook"
+                target="_blank"
+              />
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Instagram">
+              <img
+                src="img/icono_instagram.png"
+                alt="icono de Instagram"
+                target="_blank"
+              />
+            </a>
+            <a href="#" class="footer__social-link" aria-label="YouTube">
+              <img
+                src="img/icono_youtube.png"
+                alt="icono de YouTube"
+                target="_blank"
+              />
+            </a>
+            <a href="#" class="footer__social-link" aria-label="WhatsApp">
+              <img
+                src="img/icono_whatsapp.png"
+                alt="icono de WhatsApp"
+                target="_blank"
+              />
+            </a>
+          </div>
+        </div>
+        <!-- Línea blanca debajo de redes sociales -->
+        <div class="footer__line"></div>
+
+        <!-- Info Section -->
+        <div class="footer__info">
+          <!-- Address -->
+          <div class="footer__address">
+            <p>
+              Km 1 Vía Tenjo La Punta, costado oriental Chitasuga, Tenjo,
+              Cundinamarca
+            </p>
+          </div>
+
+          <!-- Contact Columns -->
+          <div class="footer__contact">
+            <div class="footer__contact-item">
+              <h3>Subdirección de Cultura</h3>
+              <p>3007274898</p>
+            </div>
+            <div class="footer__contact-item">
+              <h3>Subdirección de Turismo</h3>
+              <p>3007274887100</p>
+            </div>
+            <div class="footer__contact-item">
+              <h3>Línea anticorrupción</h3>
+              <p>(+57) 018000919748</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Large Logo Watermark -->
+        <div class="footer__watermark">
+          <img src="img/logo_gris.png" alt="logo de Tenjo gris" />
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal de descarga -->
+    <div id="modalDescarga" class="modal">
+      <div class="modal__overlay"></div>
+      <div class="modal__content">
+        <button class="modal__close" aria-label="Cerrar modal">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="M18 6L6 18M6 6l12 12" />
+          </svg>
+        </button>
+
+        <h2 class="modal__title">¡Ya casi tienes tu foto!</h2>
+
+        <p class="modal__description">
+          Para descargarla, escribe tu nombre y apellido, el correo al cual
+          llegará el link de descarga, acepta los términos y condiciones, y
+          confirma. Recuerda que solo te solicitaremos estos datos la primera
+          vez que realices una descarga en un dispositivo nuevo.
+        </p>
+
+        <div class="modal__form">
+          <!-- Campo Nombre -->
+          <div class="modal__field-wrapper">
+            <input
+              type="text"
+              class="modal__input"
+              placeholder="NOMBRE*"
+              id="nombre"
+              required
+            />
+            <div class="modal__error" id="errorNombre">Campo obligatorio</div>
+          </div>
+
+          <!-- Campo Apellidos -->
+          <div class="modal__field-wrapper">
+            <input
+              type="text"
+              class="modal__input"
+              placeholder="APELLIDOS*"
+              id="apellidos"
+              required
+            />
+            <div class="modal__error" id="errorApellidos">
+              Campo obligatorio
+            </div>
+          </div>
+
+          <!-- Campo Cédula -->
+          <div class="modal__field-wrapper">
+            <input
+              type="text"
+              class="modal__input"
+              placeholder="CÉDULA*"
+              id="cedula"
+              required
+            />
+            <div class="modal__error" id="errorCedula">Campo obligatorio</div>
+          </div>
+
+          <!-- Campo Correo -->
+          <div class="modal__field-wrapper">
+            <input
+              type="email"
+              class="modal__input"
+              placeholder="CORREO ELECTRÓNICO*"
+              id="correo"
+              required
+            />
+            <div class="modal__error" id="errorCorreo">Campo obligatorio</div>
+          </div>
+
+          <!-- Checkbox políticas -->
+          <div class="modal__checkbox-group">
+            <label class="modal__checkbox">
+              <input type="checkbox" id="politicas" required checked disabled />
+              <span class="modal__checkbox-label">
+                He leído y acepto la
+                <a href="#" target="_blank"
+                  >política de tratamiento de datos
+                  <svg
+                    width="12"
+                    height="12"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                    ></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </span>
+            </label>
+
+            <label class="modal__checkbox">
+              <input
+                type="checkbox"
+                id="condiciones"
+                required
+                checked
+                disabled
+              />
+              <span class="modal__checkbox-label">
+                He leído y acepto las condiciones de uso de la imagen.
+                <a href="#" target="_blank"
+                  >Resolución 239 del 5 de noviembre de 2021
+                  <svg
+                    width="12"
+                    height="12"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                    ></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </span>
+            </label>
+          </div>
+
+          <!-- Texto legal -->
+          <div class="modal__legal">
+            <h4>Ley de Protección de Datos Personales:</h4>
+            <p>
+              "La autorización suministrada en el presente formulario faculta al
+              Instituto de Turismo de Tenjo para que dé a sus datos aquí
+              recopilados el tratamiento señalado en la "Política de Privacidad
+              para el Tratamiento de Datos Personales" de la entidad, el cual
+              incluye, entre otras, el envío de información, así como la
+              invitación a eventos. El titular de los datos podrá, en cualquier
+              momento, solicitar que la información sea modificada, actualizada
+              o retirada de las bases de datos del Instituto de Turismo de
+              Tenjo."
+            </p>
+          </div>
+
+          <!-- Botón confirmar -->
+          <button class="modal__btn-confirmar" id="btnConfirmarDescarga">
+            CONFIRMAR DESCARGA
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
